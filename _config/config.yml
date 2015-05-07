@@ -1,3 +1,6 @@
 ---
 Name: security
 ---
+LeftAndMain:
+  extensions:
+    - StudioBonito\Security\Extensions\DisableSecurityAdminExtension

@@ -1,7 +1,5 @@
 <?php namespace StudioBonito\Security\Controllers;
 
-use CMSMenu;
-
 /**
  * MemberAdmin.
  *
@@ -62,16 +60,6 @@ class MemberAdmin extends \ModelAdmin
         'Member' => 'MemberCsvBulkLoader',
         'Group'  => 'GroupCsvBulkLoader',
     ];
-
-    /**
-     *
-     */
-    public function init()
-    {
-        parent::init();
-
-        CMSMenu::remove_menu_item('SecurityAdmin');
-    }
 
     /**
      * @return array
