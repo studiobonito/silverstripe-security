@@ -1,5 +1,9 @@
 <?php namespace StudioBonito\Security\Controllers;
 
+use GridFieldButtonRow;
+use GridFieldExportButton;
+use GridFieldPrintButton;
+
 /**
  * MemberAdmin.
  *
@@ -81,5 +85,34 @@ class MemberAdmin extends \ModelAdmin
         }
 
         return $models;
+    }
+
+    /**
+     * @param null $id
+     * @param null $fields
+     *
+     * @return \CMSForm
+     */
+    public function getEditForm($id = null, $fields = null)
+    {
+        $form = parent::getEditForm($id, $fields);
+
+        $gridField = $form->Fields()->dataFieldByName($this->sanitiseClassName($this->modelClass));
+        $gridFieldConfig = $gridField->getConfig();
+
+        $gridFieldConfig->addComponent(new GridFieldButtonRow('after'));
+
+        $gridFieldConfig->removeComponentsByType('GridFieldExportButton');
+
+        $exportButton = new GridFieldExportButton('buttons-after-left');
+        $exportButton->setExportColumns($this->getExportFields());
+
+        $gridFieldConfig->addComponent($exportButton);
+
+        $gridFieldConfig->removeComponentsByType('GridFieldPrintButton');
+
+        $gridFieldConfig->addComponent(new GridFieldPrintButton('buttons-after-left'));
+
+        return $form;
     }
 }
