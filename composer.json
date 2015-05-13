@@ -27,6 +27,9 @@
     "require-dev": {
         "scrutinizer/ocular": "~1.1"
     },
+    "suggest": {
+        "silverstripe-australia/gridfieldextensions": "Allows better Member lookup when editing a Group."
+    },
     "autoload": {
         "psr-4": {
             "StudioBonito\\SilverStripe\\Security\\": "src"
