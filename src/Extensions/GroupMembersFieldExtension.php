@@ -1,6 +1,8 @@
 <?php namespace StudioBonito\Security\Extensions;
 
 use FieldList;
+use GridField;
+use GridFieldAddExistingSearchButton;
 
 /**
  * GroupMembersFieldExtension.
@@ -12,11 +14,13 @@ class GroupMembersFieldExtension extends \DataExtension
 {
     public function updateCMSFields(FieldList $fields)
     {
-        if(class_exists('\GridFieldAddExistingSearchButton')) {
+        if (class_exists('GridFieldAddExistingSearchButton')) {
             $gridField = $fields->dataFieldByName('Members');
-            $gridFieldConfig = $gridField->getConfig();
-            $gridFieldConfig->removeComponentsByType('GridFieldAddExistingAutocompleter');
-            $gridFieldConfig->addComponent(new \GridFieldAddExistingSearchButton());
+            if ($gridField instanceof GridField) {
+                $gridFieldConfig = $gridField->getConfig();
+                $gridFieldConfig->removeComponentsByType('GridFieldAddExistingAutocompleter');
+                $gridFieldConfig->addComponent(new GridFieldAddExistingSearchButton());
+            }
         }
     }
 }
