@@ -12,6 +12,11 @@ use GridFieldAddExistingSearchButton;
  */
 class GroupMembersFieldExtension extends \DataExtension
 {
+    /**
+     * Override default GridField config to use GridFieldAddExistingAutocompleter.
+     *
+     * @param FieldList $fields
+     */
     public function updateCMSFields(FieldList $fields)
     {
         if (class_exists('GridFieldAddExistingSearchButton')) {
