@@ -5,7 +5,7 @@ use GridField;
 use GridFieldAddExistingSearchButton;
 
 /**
- * GroupMembersFieldExtension.
+ * Data extension used to override the members gridfield config on group data-objects.
  *
  * @author       Tom Densham <tom.densham@studiobonito.co.uk>
  * @copyright    Studio Bonito Ltd.

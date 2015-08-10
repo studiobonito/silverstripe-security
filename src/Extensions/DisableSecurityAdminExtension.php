@@ -3,7 +3,7 @@
 use CMSMenu;
 
 /**
- * DisableSecurityAdminExtension.
+ * Simple extension to remove default security admin class from menu.
  *
  * @author       Tom Densham <tom.densham@studiobonito.co.uk>
  * @copyright    Studio Bonito Ltd.

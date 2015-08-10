@@ -5,7 +5,7 @@ use GridFieldExportButton;
 use GridFieldPrintButton;
 
 /**
- * MemberAdmin.
+ * ModelAdmin implementation for handling member, group and role data-objects.
  *
  * @author       Tom Densham <tom.densham@studiobonito.co.uk>
  * @copyright    Studio Bonito Ltd.
@@ -66,6 +66,8 @@ class MemberAdmin extends \ModelAdmin
     ];
 
     /**
+     * Override managed model labels with CMS defaults for member, group and role.
+     *
      * @return array
      */
     public function getManagedModels()
@@ -88,6 +90,8 @@ class MemberAdmin extends \ModelAdmin
     }
 
     /**
+     * Override gridfield configuration to provide a consistent UX.
+     *
      * @param null $id
      * @param null $fields
      *
