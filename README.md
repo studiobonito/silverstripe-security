@@ -1,4 +1,4 @@
-# Google Analytics Module
+# Security Module
 
 [![Latest Version](https://img.shields.io/github/release/studiobonito/silverstripe-security.svg?style=flat-square)](https://github.com/studiobonito/silverstripe-security/releases)
 [![Software License](https://img.shields.io/badge/license-BSD-brightgreen.svg?style=flat-square)](LICENSE.md)
