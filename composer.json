@@ -21,8 +21,8 @@
     ],
     "require": {
         "php": ">=5.3.0",
-        "silverstripe/framework": "~3.1.0",
-        "silverstripe/cms": "~3.1.0"
+        "silverstripe/framework": "~3.1.15",
+        "silverstripe/cms": "~3.1.15"
     },
     "require-dev": {
         "scrutinizer/ocular": "~1.1"

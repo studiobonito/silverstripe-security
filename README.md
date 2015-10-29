@@ -11,7 +11,7 @@ Provide ModelAdmin replacement for SecurityAdmin in SilverStripe CMS.
 
 ## Requirements
 
-- SilverStripe 3.1 or newer.
+- SilverStripe 3.1.15 or newer.
 
 ## Install
 
