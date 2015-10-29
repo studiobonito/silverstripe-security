@@ -48,11 +48,11 @@ class MemberAdmin extends \ModelAdmin
      * @config
      * @var array|string
      */
-    private static $managed_models = [
+    private static $managed_models = array(
         'Member',
         'Group',
         'PermissionRole',
-    ];
+    );
 
     /**
      * List of all {@link DataObject}s which can be imported through a subclass of {@link BulkLoader} (mostly CSV data).
@@ -60,10 +60,10 @@ class MemberAdmin extends \ModelAdmin
      * @config
      * @var array
      */
-    private static $model_importers = [
+    private static $model_importers = array(
         'Member' => 'MemberCsvBulkLoader',
         'Group'  => 'GroupCsvBulkLoader',
-    ];
+    );
 
     /**
      * Override managed model labels with CMS defaults for member, group and role.
