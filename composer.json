@@ -1,0 +1,39 @@
+{
+    "name": "studiobonito/silverstripe-security",
+    "description": "Provide ModelAdmin replacement for SecurityAdmin in SilverStripe CMS.",
+    "type": "silverstripe-module",
+    "keywords": [
+        "studiobonito",
+        "silverstripe-security",
+        "silverstripe",
+        "security",
+        "member"
+    ],
+    "homepage": "https://github.com/studiobonito/silverstripe-security",
+    "license": "BSD-2-Clause",
+    "authors": [
+        {
+            "name": "Tom Densham",
+            "email": "tom.densham@studiobonito.co.uk",
+            "homepage": "http://www.studiobonito.co.uk",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "silverstripe/framework": "~3.1.15",
+        "silverstripe/cms": "~3.1.15"
+    },
+    "require-dev": {
+        "scrutinizer/ocular": "~1.1"
+    },
+    "suggest": {
+        "unclecheese/betterbuttons": "Improves the usability of ModelAdmin based interfaces.",
+        "silverstripe-australia/gridfieldextensions": "Allows better Member lookup when editing a Group."
+    },
+    "autoload": {
+        "psr-4": {
+            "StudioBonito\\SilverStripe\\Security\\": "src"
+        }
+    }
+}

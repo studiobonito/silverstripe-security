@@ -1,0 +1,9 @@
+---
+Name: security
+---
+LeftAndMain:
+  extensions:
+    - StudioBonito\Security\Extensions\DisableSecurityAdminExtension
+Group:
+  extensions:
+    - StudioBonito\Security\Extensions\GroupMembersFieldExtension
