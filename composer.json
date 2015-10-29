@@ -35,10 +35,5 @@
         "psr-4": {
             "StudioBonito\\SilverStripe\\Security\\": "src"
         }
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.0-dev"
-        }
     }
 }
