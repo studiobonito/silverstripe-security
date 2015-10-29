@@ -74,15 +74,15 @@ class MemberAdmin extends \ModelAdmin
     {
         $models = parent::getManagedModels();
 
-        if(isset($models['Member']) && isset($models['Member']['title'])) {
+        if (isset($models['Member']) && isset($models['Member']['title'])) {
             $models['Member']['title'] = _t('SecurityAdmin.Users', 'Users');
         }
 
-        if(isset($models['Group']) && isset($models['Group']['title'])) {
+        if (isset($models['Group']) && isset($models['Group']['title'])) {
             $models['Group']['title'] = singleton('Group')->i18n_plural_name();
         }
 
-        if(isset($models['PermissionRole']) && isset($models['PermissionRole']['title'])) {
+        if (isset($models['PermissionRole']) && isset($models['PermissionRole']['title'])) {
             $models['PermissionRole']['title'] = _t('SecurityAdmin.TABROLES', 'Roles');
         }
 
