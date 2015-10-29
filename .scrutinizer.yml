@@ -29,7 +29,7 @@ tools:
             paths: ['src']
     php_loc:
         enabled: true
-        excluded_dirs: [assets, lang, templates, framework, cms, vendor, tests]
+        excluded_dirs: [_config, assets, lang, templates, framework, cms, vendor, tests]
     php_cpd:
         enabled: true
-        excluded_dirs: [assets, lang, templates, framework, cms, vendor, tests]
+        excluded_dirs: [_config, assets, lang, templates, framework, cms, vendor, tests]
