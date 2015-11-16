@@ -13,7 +13,7 @@ Enhanced SilverStripe CMS security section for managing members, groups, and rol
 
 ## Requirements
 
-- SilverStripe 3.1.15 or newer.
+- SilverStripe CMS 3.1.15 and newer or 3.2 and newer.
 
 ## Install
 

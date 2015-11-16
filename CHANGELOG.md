@@ -3,6 +3,9 @@
 All Notable changes to `studiobonito/silverstripe-security` will be documented in this file
 
 ## [Unreleased]
+### Added
+- Updated module to work with SilverStripe CMS 3.2.
+
 ### Changed
 - Updated module description and keywords.
 
