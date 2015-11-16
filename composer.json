@@ -1,13 +1,17 @@
 {
     "name": "studiobonito/silverstripe-security",
-    "description": "Provide ModelAdmin replacement for SecurityAdmin in SilverStripe CMS.",
+    "description": "Enhanced SilverStripe CMS security section for managing members, groups, and roles.",
     "type": "silverstripe-module",
     "keywords": [
         "studiobonito",
-        "silverstripe-security",
         "silverstripe",
         "security",
-        "member"
+        "users",
+        "members",
+        "groups",
+        "roles",
+        "permissions",
+        "manage"
     ],
     "homepage": "https://github.com/studiobonito/silverstripe-security",
     "license": "BSD-2-Clause",

@@ -7,7 +7,7 @@
 
 ## Overview
 
-Provide ModelAdmin replacement for SecurityAdmin in SilverStripe CMS.
+Enhanced SilverStripe CMS security section for managing members, groups, and roles.
 
 ![Screenshot of Security Module](./assets/images/screenshot.png)
 
@@ -29,9 +29,16 @@ Copy the 'silverstripe-security' folder to the root of your SilverStripe install
 
 ## Usage
 
-The model provides a drop in replacement for the default 'Security' tab in the SilverStripe CMS.
-Installing the module will replace the default 'Security' tab and replace it with this one.
-This 'Security' tab is based on `ModelAdmin` and provides simple filtering which is good for managing sites with large numbers of users/groups.
+The model provides a drop in replacement for the default 'Security' section in the SilverStripe CMS.
+This 'Security' section replacement is based on `ModelAdmin`
+and provides simple filtering which is good for managing sites with large numbers of users/groups.
+
+## Roadmap
+
+- [x] Create `ModelAdmin` base drop in for current security section.
+- [ ] Add options for admins to control available fields for members.
+- [ ] Extend filtering options
+- [ ] Improve import/export
 
 ## Contributing
 
