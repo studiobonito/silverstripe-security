@@ -3,6 +3,8 @@
 All Notable changes to `studiobonito/silverstripe-security` will be documented in this file
 
 ## [Unreleased]
+### Added
+- Included `.editorconfig` file.
 
 ## [1.0.1] - 2015-11-16
 ### Added
