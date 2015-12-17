@@ -6,6 +6,9 @@ All Notable changes to `studiobonito/silverstripe-security` will be documented i
 ### Added
 - Included `.editorconfig` file.
 
+### Fixed
+- Corrected version string for SilverStripe in `composer.json` file.
+
 ## [1.0.1] - 2015-11-16
 ### Added
 - Updated module to work with SilverStripe CMS 3.2.
